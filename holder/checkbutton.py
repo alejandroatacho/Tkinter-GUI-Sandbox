@@ -25,7 +25,8 @@ check_button = Checkbutton(window, text="I Agree To The Terms And Service",
                            padx=25,
                            pady=10,
                            image=photo3,
-                           compound='left')
+                           compound='left',
+                           )
 
 check_button.pack()
 window.mainloop()
