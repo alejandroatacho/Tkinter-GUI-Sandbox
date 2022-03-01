@@ -10,6 +10,7 @@ def display():
 
 window = Tk()
 
+photo3 = PhotoImage(file='views/ft3.png')
 x = IntVar()
 check_button = Checkbutton(window, text="I Agree To The Terms And Service",
                            variable=x,
@@ -20,7 +21,11 @@ check_button = Checkbutton(window, text="I Agree To The Terms And Service",
                            fg='pink',
                            bg='black',
                            activeforeground='pink',
-                           activebackground='black')
+                           activebackground='black',
+                           padx=25,
+                           pady=10,
+                           image=photo3,
+                           compound='left')
 
 check_button.pack()
 window.mainloop()
