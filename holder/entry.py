@@ -4,6 +4,7 @@ from tkinter import *
 def submit():
     username = entry.get()
     print("Hello " + username)
+    entry.config(state=DISABLED)  # after input disables the form
 
 
 def delete():
@@ -18,7 +19,9 @@ window = Tk()
 
 entry = Entry(window, font=("Arial", 50),
               fg="pink",
-              bg="black")
+              bg="black",
+              show="*"  # fake encryption
+              ,)
 
 entry.pack()
 
